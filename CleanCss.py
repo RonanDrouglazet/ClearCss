@@ -29,10 +29,10 @@ for line in cssFileTabLines:
         newCssFileTabLines.append(line)
         newCssFile.write(line)
 
-print >> sys.stderr, "CleanCss (clear dead css code)"
-print >> sys.stderr, "Original : " + str(len(cssFileTabLines)) + " Css lines " + sys.argv[1]
-print >> sys.stderr, "Cleaned  : " + str(len(newCssFileTabLines)) + " Css lines " + sys.argv[2]
-print >> sys.stderr, "Total    : " + str(len(cssFileTabLines) - len(newCssFileTabLines)) + " Css lines removed (" + str(100 - (len(newCssFileTabLines) * 100 / len(cssFileTabLines))) + "% gain)"
+print >> sys.stdout, "CleanCss (clear dead css code)"
+print >> sys.stdout, "Original : " + str(len(cssFileTabLines)) + " Css lines " + sys.argv[1]
+print >> sys.stdout, "Cleaned  : " + str(len(newCssFileTabLines)) + " Css lines " + sys.argv[2]
+print >> sys.stdout, "Total    : " + str(len(cssFileTabLines) - len(newCssFileTabLines)) + " Css lines removed (" + str(100 - (len(newCssFileTabLines) * 100 / len(cssFileTabLines))) + "% gain)"
 
 cssFile.close()
 newCssFile.close()

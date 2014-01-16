@@ -3,5 +3,5 @@
   "private": true,
   "author": "Ronan Drouglazet <ronan.drouglazet@gmail.com>",
   "description": "Erase duplicate css line, only work with one line css instruction",
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
